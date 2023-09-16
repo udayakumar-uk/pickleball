@@ -1,0 +1,26 @@
+<svg width="100%" height="auto" viewBox="0 0 1400 884" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_347_4747" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1400" height="884">
+<rect width="1400" height="884" rx="30" fill="#1DCE5C"/>
+</mask>
+<g mask="url(#mask0_347_4747)">
+<rect width="1400" height="884" rx="30" fill="#1DCE5C"/>
+<circle cx="699.5" cy="441.5" r="627.5" stroke="#1EC35B" stroke-width="60"/>
+<circle cx="699.5" cy="441.5" r="461.5" stroke="#1EC35B" stroke-width="60"/>
+<circle cx="699.5" cy="442.5" r="292.5" stroke="#1EC35B" stroke-width="60"/>
+<circle cx="700" cy="442" r="260" stroke="#F2FFF7" stroke-width="6"/>
+<rect x="963" y="439" width="437" height="6" fill="#F2FFF7"/>
+<rect y="439" width="437" height="6" fill="#F2FFF7"/>
+</g>
+<defs>
+<filter id="filter0_b_347_4747" x="10" y="10" width="1380" height="864" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_347_4747"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_347_4747" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_347_4747" x1="1370" y1="854" x2="30" y2="30.0001" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0.6"/>
+</linearGradient>
+</defs>
+</svg>

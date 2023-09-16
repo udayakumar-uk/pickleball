@@ -1,0 +1,187 @@
+/*header*/
+
+header nav a{
+	color: #000;
+	text-decoration: none;
+	padding: 1rem;
+    margin-inline: 5px;
+}
+header nav a:hover{
+	color: var(--primary);
+	text-decoration: underline;
+}
+
+/*end header*/
+
+
+
+/* home-banner */
+.home-banner {
+	background: url('../img/banner-bg.svg');
+    background-size: cover;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+	padding: 2rem;
+}
+.home-banner .inner-banner{
+	padding: 2rem;
+    border: 1px solid #fff9;
+    border-radius: 15px;
+    background-color: #ffffff17;
+    backdrop-filter: blur(6px);
+}
+
+
+.slider-image{
+	margin-right: 2rem;
+	text-align: left;
+	position: relative;
+	overflow: hidden;
+	border-radius: 20px;
+}
+.slider-image a{
+	background-color: #0004;
+	padding: 10px;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-decoration: none;
+	width: 100%;
+}
+.slider-image a:hover{
+	background-color: #0006;
+	text-decoration: underline;
+}
+
+#bannerSlider .slick-list{
+	width: 90%;
+}
+
+#bannerSlider .slick-prev, #bannerSlider .slick-next{
+	border: 1px solid #fff;
+    color: #fff !important;
+}
+
+#bannerSlider .slick-next{
+    right: 0;
+}
+
+.slick-slide img{
+	width: 100%;
+}
+
+
+
+
+#matchMakingSlider .slick-list{
+	width: 92%;
+	margin: auto;
+}
+#matchMakingSlider .slick-track{
+	padding-block: 2rem;
+}
+
+#matchMakingSlider .slick-prev{
+	left: 5%;
+}
+
+#matchMakingSlider .slick-next{
+	right: 5%;
+}
+
+#matchMakingSlider .slick-prev, #matchMakingSlider .slick-next{
+	top: -44px;
+}
+#matchMakingSlider .card{
+	box-shadow: 4px 4px 21px 0px rgba(0, 0, 0, 0.10);
+}
+
+#matchMakingSlider .card .card-header{
+	background-color: var(--primary);
+	color: #fff;
+	border: 0;
+}
+#matchMakingSlider .card .card-body{
+	padding: 1.5rem;
+}
+#matchMakingSlider .card .card-body :is(.left-team, .right-team){
+	width: 100px;
+}
+
+#matchMakingSlider .card .card-body img{
+	max-width: 70px;
+	margin: auto;
+}
+
+#matchMakingSlider .card, #matchMakingSlider .card .card-header{
+	border-radius: 8px;
+	position: relative;
+}
+#matchMakingSlider .card .card-header:after{
+    width: 60%;
+    height: 100%;
+    border-radius: 8px;
+    content: '';
+    clear: both;
+    display: block;
+    background-color: #1DAF53;
+    position: absolute;
+    top: 6px;
+    right: 3px;
+    transform: rotate(-3.293deg);
+    /* transform: skew(10deg, 10deg); */
+    z-index: 0;
+	mix-blend-mode: lighten;
+}
+#matchMakingSlider .slider-content{
+	margin-inline: 1.5rem;
+}
+
+.machmake-section {
+	background: url('../img/match-macking-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: contain;
+}
+
+
+/* Responsive */
+
+@media (max-width: 991px) {
+	header nav a {
+		padding-inline: 10px;
+	}
+}
+
+
+@media (max-width: 767px) {
+	header nav a {
+		display: block;
+	}
+	.nav-section {
+		position: fixed;
+		left: -100%;
+		top: 0;
+		width: min(400px, 100%);
+		padding: 2rem 1rem;
+		transition: all ease-in-out 0.3s;    
+		background: #fff;
+		z-index: 9;
+		height: 100dvh;
+		overflow: auto;
+	}
+	.nav-section ul{
+		flex-wrap: wrap;
+	}
+	.nav-section ul li{
+		display: block;
+		width: 100%;
+		font-size: 1.2rem;
+	}
+	.nav-section.active{
+		left: 0;
+	}
+}
+
