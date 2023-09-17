@@ -151,6 +151,72 @@ header nav a:hover{
 	background-size: contain;
 }
 
+.team-list ul li{
+	background-color: #fff;
+	border-radius: 12px;
+	position: relative;
+	padding: 0.7rem 2rem;
+	margin-top: 1rem;
+}
+.team-list ul li::before{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: var(--primary);
+	height: 45%;
+	width: 5px;
+	border-radius: 2px;
+	content: '';
+	clear: both;
+}
+
+
+/* wizard */
+
+/* wizard end */
+
+footer {
+	background: url('../img/footer-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+	padding: 1rem;
+}
+footer .foot-titile{
+	text-transform: uppercase;
+	color: var(--primary);
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+}
+
+footer .foot-subtitile{
+	margin-top: 1.4rem;
+	color: var(--primary);
+}
+
+.web-address li{
+	display: flex;
+	padding-bottom: 1rem;
+}
+
+.web-address li p{
+	margin-bottom: 0;
+}
+
+.web-address li .material-symbols-rounded{
+	--size: 45px;
+	width: var(--size);
+	height: var(--size);
+	line-height: var(--size);
+	/* text-align: center; */
+	border-right: 2px solid var(--primary);
+	color: var(--primary);
+	font-size: 2rem;
+	margin-right: 20px;
+}
+
+
 
 /* Responsive */
 
