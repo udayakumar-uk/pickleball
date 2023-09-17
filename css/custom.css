@@ -74,25 +74,20 @@ header nav a:hover{
 
 
 
-
-#matchMakingSlider .slick-list{
-	width: 92%;
-	margin: auto;
-}
 #matchMakingSlider .slick-track{
 	padding-block: 2rem;
 }
 
 #matchMakingSlider .slick-prev{
-	left: 5%;
+	left: 0;
 }
 
 #matchMakingSlider .slick-next{
-	right: 5%;
+	right: 0;
 }
 
 #matchMakingSlider .slick-prev, #matchMakingSlider .slick-next{
-	top: -44px;
+	top: -40px;
 }
 #matchMakingSlider .card{
 	box-shadow: 4px 4px 21px 0px rgba(0, 0, 0, 0.10);
@@ -104,7 +99,7 @@ header nav a:hover{
 	border: 0;
 }
 #matchMakingSlider .card .card-body{
-	padding: 1.5rem;
+	padding: 1rem;
 }
 #matchMakingSlider .card .card-body :is(.left-team, .right-team){
 	width: 100px;
@@ -135,9 +130,19 @@ header nav a:hover{
     z-index: 0;
 	mix-blend-mode: lighten;
 }
-#matchMakingSlider .slider-content{
-	margin-inline: 1.5rem;
+
+
+#matchMakingSlider .slick-list{
+	--rem: 1.5rem;
+	width: calc(100% + (var(--rem) * 2));
+	margin-left: calc(-1 * var(--rem));
+	/* margin: auto; */
 }
+#matchMakingSlider .slider-content{
+	margin-inline: var(--rem);
+}
+
+
 
 .machmake-section {
 	background: url('../img/match-macking-bg.svg');
