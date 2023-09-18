@@ -13,6 +13,26 @@ header nav a:hover{
 
 /*end header*/
 
+/* login form */
+.login-form{
+	background-color: #fff;
+	border-radius: 10px;
+	border: 1px solid #fff;
+	overflow: hidden;
+}
+.form-group{
+	margin-bottom: 10px;
+}
+.form-group label{
+	color: #111;
+	margin-bottom: 5px;
+}
+.login-section h1{
+	font-size: 45px;
+}
+
+
+/* end */
 
 
 /* home-banner */
