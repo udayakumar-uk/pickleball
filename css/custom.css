@@ -27,7 +27,7 @@ header nav a:hover{
 	color: #111;
 	margin-bottom: 5px;
 }
-.login-section h1{
+.login-section h1, .register-section h1{
 	font-size: 45px;
 }
 
@@ -235,6 +235,118 @@ footer .foot-subtitile{
 	font-size: 2rem;
 	margin-right: 20px;
 }
+
+
+
+/* wizard */
+
+.wizard {
+	position: relative; 
+	display: flex;
+    flex-wrap: wrap;
+	--wsize: 50px;
+}
+  
+.wizard > .steps {
+    writing-mode: vertical-lr;
+	position: absolute;
+}
+  
+.wizard > .steps .current-info{
+	display: none; 
+}
+  
+.wizard > .steps ul {
+	display: flex;
+	justify-content: center; 
+}
+  
+.wizard > .steps li a {
+	display: inline-block;
+    width: 30px;
+    line-height: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    margin-top: var(--wsize);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    text-align: center;
+    position: relative;
+    writing-mode: horizontal-tb;
+}
+.wizard > .steps li a:before, .wizard > .steps li a:after {
+	content: "";
+	--size: 2px;
+	width: var(--size);
+	height: var(--wsize);
+	background: none;
+	border: 1px dashed var(--primary);
+	position: absolute;
+	left: calc(50% - (var(--size) / 2));
+	top: calc(-1 * var(--wsize)); 
+	transition: all 0.6s ease;
+}
+
+.wizard > .steps li a:after { 
+	background: var(--primary);
+	height: 0;
+	border: 0;
+}
+
+.wizard > .steps li.checked a:after {
+	  height: var(--wsize);
+}
+.wizard > .steps li.checked a, .wizard > .steps li.first a {
+	background: var(--primary);
+	color: #fff; 
+}
+.wizard > .steps li:first-child a {
+	margin-top: 0; 
+}
+
+.wizard > .steps li:first-child a:before, .wizard > .steps li:first-child a:after, #wizard .actions .disabled{
+	display: none; 
+}
+
+#wizard > .actions {
+	flex-basis: 100%;
+}
+
+#wizard > .actions ul{
+	display: flex;
+	justify-content: right;
+	border-bottom: 1px solid var(--primary);
+	padding-bottom: 5px;
+}
+#wizard > .actions ul li a{
+	border-radius: 5px;
+    background: var(--primary);
+    color: #fff;
+    padding: 5px 16px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+#wizard > .content, #wizard > .actions  {
+	padding-left: var(--wsize);
+}
+
+#wizard > .content  {
+	order: 1;
+	flex-grow: 1;
+}
+  
+.network-wizard{
+	height: 100%;
+}
+.network-wizard .wrapper {
+	height: calc(100% - 70px);
+}
+
+
+/* end wizard */
+
 
 
 

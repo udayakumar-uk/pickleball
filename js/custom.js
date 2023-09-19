@@ -68,3 +68,36 @@ $(document).on('ready', function() {
 });
 
 
+
+// wizard area
+
+$("#wizard").steps({
+  headerTag: "h3",
+  bodyTag: "section",
+  transitionEffect: "fade",
+  enableAllSteps: true,
+  transitionEffectSpeed: 100,
+  labels: {
+      finish: "Submit",
+      next: "Next",
+      previous: "Prev"
+  }
+});
+$('.wizard > .steps li a').click(function(){
+  $(this).parent().addClass('checked');
+$(this).parent().prevAll().addClass('checked');
+$(this).parent().nextAll().removeClass('checked');
+});
+// Custome Jquery Step Button
+$('.forward').click(function(){
+  $("#wizard").steps('next');
+})
+$('.backward').click(function(){
+    $("#wizard").steps('previous');
+})
+
+$('.select .dropdown li').click(function(){
+    $(this).parent().toggle();
+    var text = $(this).attr('rel');
+    $(this).parent().prev().find('div').text(text);
+})
