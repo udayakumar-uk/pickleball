@@ -349,12 +349,51 @@ footer .foot-subtitile{
 
 
 
+/* search-group */
+.search-group{
+	padding: 10px 20px;
+    background: #fff;
+    border-radius: 50px;
+}
+
+.search-group .btn-group button.blr {
+    border-radius: 50px 0px 0px 50px;
+}
+.search-group .btn-group button.brr {
+    border-radius: 00px 50px 50px 0px;
+}
+
+.search-group:has(> #searchPlayers:focus){
+	box-shadow: 4px 4px 20px 0px #00000026;
+}
+
+.player-cards .player-img img{
+	object-fit: cover;
+    object-position: center;
+}
+.player-cards .player-details p{
+	font-size: 12px;
+	font-weight: 500;
+}
+
+
+.history-section{
+	background: url('../img/history-bg.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 4rem;
+}
 
 /* Responsive */
 
 @media (max-width: 991px) {
 	header nav a {
 		padding-inline: 10px;
+	}
+	
+	.history-section{
+		padding: 3rem;
 	}
 }
 
@@ -385,6 +424,10 @@ footer .foot-subtitile{
 	}
 	.nav-section.active{
 		left: 0;
+	}
+	
+	.history-section{
+		padding: 1rem;
 	}
 }
 

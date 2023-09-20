@@ -53,7 +53,132 @@
 
 <main>
 
-	Player list page
+	<section class="playerlist-section my-4">
+		<div class="container">
+			<div class="search-group d-flex align-center">
+				<span class="material-symbols-rounded text-primary" form="searchPlayers"> search </span>
+				<input type="text" placeholder="Search here..." class="form-control border-0 dropdown flex-grow-1" id="searchPlayers" name="players">
+				<div class="dropdown flex-shrink-0 btn-group">
+					<button type="button" class="btn btn-primary no-style blr" data-bs-auto-close="outside" data-bs-toggle="dropdown"><span class="material-symbols-rounded"> filter_alt </span> Action</button>
+					<button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split no-style no-afbef brr"> <span class="material-symbols-rounded"> autorenew </span></button>
+					<form class="dropdown-menu p-0 border-0" style="min-width: 200px;">
+						<ul class="list-group">
+							<li class="list-group-item">
+								<input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+								<label class="form-check-label" for="firstCheckbox">First checkbox</label>
+							</li>
+							<li class="list-group-item">
+								<input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+								<label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+							</li>
+							<li class="list-group-item">
+								<input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+								<label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+							</li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+			<p class="my-3 text-muted">Showing results on : <strong class="text-primary">1220 Leagues</strong></p>
+			<div class="player-cards">
+				<div class="row">
+					<div class="col-md-6 col-xl-4 mt-4">
+						<div class="card border-0 shadow">
+							<div class="card-body d-flex align-items-stretch p-2">
+								<div class="player-img flex-shrink-0 pe-2">
+									<img src="./img/players.svg" class="rounded" alt="players" height="100%" width="100">
+								</div>
+								<div class="player-details flex-grow-1">
+									<h6 class="fw-600">Annamalai Sivakumar</h6>
+									<div class="progress my-2" style="height: 5px;">
+										<div class="progress-bar" role="progressbar" aria-label="Example 1px high" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<div class="d-flex flex-wrap">
+										<p class="col-6 mb-2"><span class="material-symbols-rounded text-primary"> trending_up </span> 8.00/8.00</p>
+										<p class="col-6 mb-2"><span class="material-symbols-rounded text-primary"> male </span> Male</p>
+										<p class="col-6 mb-2"><span class="material-symbols-rounded text-primary"> location_on </span> Nova Scotia</p>
+										<p class="col-6 mb-2"><span class="material-symbols-rounded text-primary"> hotel_class </span> 2 Points</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-xl-4 mt-4">
+						<div class="card border-0 shadow">
+							<div class="card-body d-flex align-items-stretch p-2">
+								<div class="player-img flex-shrink-0 pe-2">
+									<img src="./img/players.svg" class="rounded" alt="players" height="100%" width="100">
+								</div>
+								<div class="player-details flex-grow-1">
+									<h6 class="fw-600">Sivakumar</h6>
+									<div class="progress my-2" style="height: 5px;">
+										<div class="progress-bar" role="progressbar" aria-label="Example 1px high" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<div class="d-flex flex-wrap">
+										<p class="col-6 mb-2"><span class="material-symbols-rounded text-primary"> trending_up </span> 2.00/2.00</p>
+										<p class="col-6 mb-2"><span class="material-symbols-rounded text-primary"> male </span> Male</p>
+										<p class="col-6 mb-2"><span class="material-symbols-rounded text-primary"> location_on </span> Chester</p>
+										<p class="col-6 mb-2"><span class="material-symbols-rounded text-primary"> hotel_class </span> 12 Points</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-xl-4 mt-4">
+						<div class="card border-0 shadow">
+							<div class="card-body d-flex align-items-stretch p-2">
+								<div class="player-img flex-shrink-0 pe-2">
+									<img src="./img/players.svg" class="rounded" alt="players" height="100%" width="100">
+								</div>
+								<div class="player-details flex-grow-1">
+									<h6 class="fw-600">Udayakumar</h6>
+									<div class="progress my-2" style="height: 5px;">
+										<div class="progress-bar" role="progressbar" aria-label="Example 1px high" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<div class="d-flex flex-wrap">
+										<p class="col-6 mb-2"><span class="material-symbols-rounded text-primary"> trending_up </span> 6.00/7.00</p>
+										<p class="col-6 mb-2"><span class="material-symbols-rounded text-primary"> male </span> Male</p>
+										<p class="col-6 mb-2"><span class="material-symbols-rounded text-primary"> location_on </span> Nova Scotia</p>
+										<p class="col-6 mb-2"><span class="material-symbols-rounded text-primary"> hotel_class </span> 10 Points</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-xl-4 mt-4">
+						<div class="card border-0 shadow">
+							<div class="card-body d-flex align-items-stretch p-2">
+								<div class="player-img flex-shrink-0 pe-2">
+									<img src="./img/players.svg" class="rounded" alt="players" height="100%" width="100">
+								</div>
+								<div class="player-details flex-grow-1">
+									<h6 class="fw-600">Shriff</h6>
+									<div class="progress my-2" style="height: 5px;">
+										<div class="progress-bar" role="progressbar" aria-label="Example 1px high" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<div class="d-flex flex-wrap">
+										<p class="col-6 mb-2"><span class="material-symbols-rounded text-primary"> trending_up </span> 4.00/7.00</p>
+										<p class="col-6 mb-2"><span class="material-symbols-rounded text-primary"> male </span> Male</p>
+										<p class="col-6 mb-2"><span class="material-symbols-rounded text-primary"> location_on </span> Chester</p>
+										<p class="col-6 mb-2"><span class="material-symbols-rounded text-primary"> hotel_class </span> 10 Points</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<section class="history-section text-white my-5">
+	<h2 class="lonsol-100">Our History</h2>
+	<h6 class="fw-600">About the club SC United</h5>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+	<a href="./" class="btn btn-outline-light">Read more</a>
+</section>
+
 
 </main>
 

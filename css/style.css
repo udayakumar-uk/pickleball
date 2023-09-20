@@ -142,8 +142,21 @@ ul{
     justify-content: space-between;
 }
 
+.form-check-input:focus{
+    border-color: #8af6b0;
+    box-shadow: 0 0 0 0.25rem rgb(17 226 95 / 17%);
+}
+.form-check-input:checked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
 
-.btn{
+.no-afbef::after, .no-afbef::before{
+    display: none;
+    content: '';
+}
+
+.btn:not(.no-style){
     padding: 8px 24px;
     border-radius: 50px;
     transition: all ease-in-out .1s;
@@ -152,6 +165,9 @@ ul{
     transform: scale(0.96);
 }
 
+.progress-bar{
+    --bs-progress-bar-bg: var(--primary);
+}
 
 .btn-outline-primary{
     --bs-btn-color: var(--primary);
@@ -161,6 +177,17 @@ ul{
     --bs-btn-active-bg: var(--primary);
     --bs-btn-active-border-color: var(--primary);
     --bs-btn-disabled-color: var(--primary);
+    --bs-btn-disabled-border-color: var(--primary);
+}
+
+.btn-primary{
+    --bs-btn-bg: var(--primary);
+    --bs-btn-border-color: var(--primary);
+    --bs-btn-hover-bg: var(--primary);
+    --bs-btn-hover-border-color: var(--primary);
+    --bs-btn-active-bg: var(--primary);
+    --bs-btn-active-border-color: var(--primary);
+    --bs-btn-disabled-bg: var(--primary);
     --bs-btn-disabled-border-color: var(--primary);
 }
 
