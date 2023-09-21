@@ -156,8 +156,13 @@ ul{
     content: '';
 }
 
+.btn.btn-sm:not(.no-style){
+    padding: 5px 15px;
+    font-size: 13px;
+}
 .btn:not(.no-style){
     padding: 8px 24px;
+    font-weight: 500;
     border-radius: 50px;
     transition: all ease-in-out .1s;
 }

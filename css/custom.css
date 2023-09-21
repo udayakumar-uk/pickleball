@@ -173,7 +173,7 @@ header nav a:hover{
 
 .team-list ul li{
 	background-color: #fff;
-	border-radius: 12px;
+	border-radius: 10px;
 	position: relative;
 	padding: 0.7rem 2rem;
 	margin-top: 1rem;
@@ -374,6 +374,7 @@ footer .foot-subtitile{
 .player-cards .player-details p{
 	font-size: 12px;
 	font-weight: 500;
+	margin-bottom: 10px;
 }
 
 
