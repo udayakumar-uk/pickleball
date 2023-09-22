@@ -166,6 +166,10 @@ ul{
     border-radius: 50px;
     transition: all ease-in-out .1s;
 }
+.btn.action-btn{
+    border-radius: 5px;
+}
+
 .btn:active{
     transform: scale(0.96);
 }

@@ -6,7 +6,7 @@ header nav a{
 	padding: 1rem;
     margin-inline: 5px;
 }
-header nav a:hover{
+header nav a:hover, header nav a.active{
 	color: var(--primary);
 	text-decoration: underline;
 }
@@ -50,6 +50,10 @@ header nav a:hover{
     border-radius: 15px;
     background-color: #ffffff17;
     backdrop-filter: blur(6px);
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -90,6 +94,9 @@ header nav a:hover{
 
 .slick-slide img{
 	width: 100%;
+	max-height: 300px;
+    object-fit: cover;
+    object-position: center;
 }
 
 
@@ -113,42 +120,46 @@ header nav a:hover{
 	box-shadow: 4px 4px 21px 0px rgba(0, 0, 0, 0.10);
 }
 
-#matchMakingSlider .card .card-header{
+.banner-card .card{
+	max-width: 400px;
+}
+
+#matchMakingSlider .card .card-header, .banner-card .card .card-header{
 	background-color: var(--primary);
 	color: #fff;
 	border: 0;
+	z-index: 1;
 }
-#matchMakingSlider .card .card-body{
+#matchMakingSlider .card .card-body, .banner-card .card .card-body{
 	padding: 1rem;
 }
-#matchMakingSlider .card .card-body :is(.left-team, .right-team){
+#matchMakingSlider .card .card-body :is(.left-team, .right-team), .banner-card .card .card-body :is(.left-team, .right-team){
 	width: 100px;
 }
 
-#matchMakingSlider .card .card-body img{
+#matchMakingSlider .card .card-body img, .banner-card .card .card-body img{
 	max-width: 70px;
 	margin: auto;
 }
 
-#matchMakingSlider .card, #matchMakingSlider .card .card-header{
+#matchMakingSlider .card, .banner-card .card{
 	border-radius: 8px;
 	position: relative;
+	overflow: hidden;
 }
-#matchMakingSlider .card .card-header:after{
-    width: 60%;
-    height: 100%;
+#matchMakingSlider .card:after, .banner-card .card:after{
+	width: 60%;
+    height: 35px;
     border-radius: 8px;
     content: '';
     clear: both;
     display: block;
     background-color: #1DAF53;
     position: absolute;
-    top: 6px;
-    right: 3px;
-    transform: rotate(-3.293deg);
-    /* transform: skew(10deg, 10deg); */
+    top: 8px;
+    right: 0px;
+    transform: rotate(-4deg);
     z-index: 0;
-	mix-blend-mode: lighten;
 }
 
 
@@ -195,6 +206,15 @@ header nav a:hover{
 /* wizard */
 
 /* wizard end */
+
+
+
+.tournament-banner{
+	background: url('../img/tournament-bg.svg') no-repeat center/cover;
+	padding: 1rem;
+}
+
+
 
 footer {
 	background: url('../img/footer-bg.svg');
@@ -395,6 +415,12 @@ footer .foot-subtitile{
 	
 	.history-section{
 		padding: 3rem;
+	}
+	.login-section h1, .register-section h1{
+		font-size: 38px;
+	}
+	.home-banner, .home-banner .inner-banner{
+		padding: 1rem;
 	}
 }
 
