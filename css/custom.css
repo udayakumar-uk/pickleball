@@ -22,11 +22,39 @@ header nav a:hover, header nav a.active{
 }
 .form-group{
 	margin-bottom: 10px;
+	position: relative;
 }
 .form-group label{
 	color: #111;
 	margin-bottom: 5px;
 }
+.backFilter .dropdown-menu{
+	padding: 1rem;
+	padding-top: 20px;
+}
+.backFilter .form-group{
+	margin-bottom: 1.5rem;
+}
+.backFilter .form-group .form-control{
+	height: 35px;
+}
+.backFilter .form-group label{
+	position: absolute;
+	top: -10px;
+	left: 10px;
+	color: var(--primary);
+	font-size: 13px;
+	background-color: #fff;
+	padding-inline: 5px;
+	margin: 0;
+}
+
+.backFilter .form-group label span{
+	font-size: 18px;
+}
+
+
+
 .login-section h1, .register-section h1{
 	font-size: 45px;
 }
@@ -175,11 +203,8 @@ header nav a:hover, header nav a.active{
 
 
 
-.machmake-section {
-	background: url('../img/match-macking-bg.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-	background-size: contain;
+.machmake-section, .createtour-section {
+	background: url('../img/match-macking-bg.svg') no-repeat center/contain;
 }
 
 .team-list ul li{
@@ -187,7 +212,7 @@ header nav a:hover, header nav a.active{
 	border-radius: 10px;
 	position: relative;
 	padding: 0.7rem 2rem;
-	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 .team-list ul li::before{
 	position: absolute;
@@ -209,9 +234,29 @@ header nav a:hover, header nav a.active{
 
 
 
-.tournament-banner{
-	background: url('../img/tournament-bg.svg') no-repeat center/cover;
-	padding: 1rem;
+.tournament-banner .carousel-inner{
+	border-radius: 10px;
+}
+.tournament-banner .inner-banner{
+    padding: 8vw 5vw;
+    position: relative;
+    z-index: 9;
+    background-color: #082e1555;
+}
+
+.tournament-banner .carousel-item img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.tournament-banner .carousel-item{
+	position: absolute;
+    top: 0;
+	left: 0;
+    z-index: -1;
+    height: 100%;
+	width: 100%;
 }
 
 
@@ -370,7 +415,7 @@ footer .foot-subtitile{
 
 
 /* search-group */
-.search-group{
+/* .search-group{
 	padding: 10px 20px;
     background: #fff;
     border-radius: 50px;
@@ -385,7 +430,18 @@ footer .foot-subtitile{
 
 .search-group:has(> #searchPlayers:focus){
 	box-shadow: 4px 4px 20px 0px #00000026;
+} */
+
+.btn.back-btn{
+	color: #222;
+	font-size: 18px;
+	padding: 0;
+	text-decoration: none;
 }
+.back-btn:hover, .back-btn:active, .back-btn:focus{
+	color: var(--primary);
+}
+
 
 .player-cards .player-img img{
 	object-fit: cover;
@@ -393,8 +449,13 @@ footer .foot-subtitile{
 }
 .player-cards .player-details p{
 	font-size: 12px;
-	font-weight: 500;
 	margin-bottom: 10px;
+	color: #6A6A6A;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
 }
 
 
@@ -403,8 +464,137 @@ footer .foot-subtitile{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	padding: 4rem;
+	padding: 3rem 0;
 }
+
+
+/* createtour-section */
+.tour-tab{
+    border-radius: 5px 5px 0 0;
+    background-color: var(--primary);
+    color: #fff;
+    margin: 0;
+    margin-right: auto;
+    padding: 5px 12px;
+    font-size: 1rem;
+	display: inline-block;
+}
+.tour-tab .badge{
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50px;
+    color: var(--primary);
+    vertical-align: middle;
+	background-color: #fff;
+}
+.createtour-section .tour-details{
+	height: 100%;
+}
+.createtour-section .tour-details .card{
+	height: calc(100% - 30px);
+}
+.match-notes{
+	background-color: #e2ffed;
+}
+
+/* end  createtour-section */
+
+
+#faqAccordion .accordion-item{
+	border: 0;
+	margin-block: 10px;
+	border-radius: 6px;
+    overflow: hidden;
+}
+#faqAccordion .accordion-header .accordion-button{
+	background: #fff !important;
+	font-weight: 600;
+	font-size: 1.3rem;
+}
+
+#faqAccordion .accordion-header .accordion-button:not(.collapsed){
+	color: var(--primary);
+}
+#faqAccordion .accordion-header .accordion-button:not(.collapsed):after{
+	filter: hue-rotate(-70deg);
+}
+
+.searchbox {
+	--width: 25px;
+}
+
+.searchbox .material-symbols-rounded{
+	padding: 0;
+    background: no-repeat;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3px;
+	width: var(--width);
+    z-index: 9;
+	color: #888;
+	font-size: 20px;
+}
+.searchbox input{
+	border-radius: 5px !important;
+	padding-left: calc(var(--width) + 5px);
+}
+
+
+
+.primary-card{
+	padding: 1rem;
+	border: 1px solid var(--primary);
+	border-radius: 6px;
+}
+
+.tour-tab + .primary-card, .tour-tab + div :is(.primary-card){
+	border-top-left-radius: 0px;
+}
+
+.point-number li{
+	width: 30px;
+}
+.points-input input.form-control{
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    padding: 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+.team-point > li:first-child{
+	padding-top: 8px;
+}
+
+.team-point > li:not(:last-child){
+	padding-bottom: 12px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid #ddd;
+}
+
+
+
+
+.win-ad {
+	background: url('../img/win-bg.svg') no-repeat center/cover;
+}
+
+.win-ad button:not(:hover){
+	background-color: #fff;
+}
+
+.team-card .team-list:not(:last-child){
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+	border-bottom: 1px solid #ddd;
+}
+
+
 
 /* Responsive */
 
@@ -413,9 +603,6 @@ footer .foot-subtitile{
 		padding-inline: 10px;
 	}
 	
-	.history-section{
-		padding: 3rem;
-	}
 	.login-section h1, .register-section h1{
 		font-size: 38px;
 	}
@@ -451,10 +638,6 @@ footer .foot-subtitile{
 	}
 	.nav-section.active{
 		left: 0;
-	}
-	
-	.history-section{
-		padding: 1rem;
 	}
 }
 

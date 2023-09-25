@@ -58,7 +58,7 @@
 		<div class="team-details-card bg-white shadow rounded-4">
 			<div class="row align-center">
 				<div class="col-md-7">
-					<button type="button" class="btn btn-primary rounded-1 px-3 py-2 m-3 m-md-4" id="backTeamDetails"><span class="material-symbols-rounded"> west </span>&nbsp; Team Details</button>
+					<button type="button" class="btn btn-link back-btn m-3"><span class="material-symbols-rounded"> arrow_back </span> Team Details</button>
 					<div class="player-details p-3 p-md-4">
 						<label class="text-primary mt-3">Team Name</label>
 						<h6 class="fw-600">PPL Premier Pickleball</h5>
@@ -72,23 +72,34 @@
 								<h6 class="fw-600">Abinaya</h5>
 							</div>
 						</div>
-						<label class="text-primary mt-3">Players Details</label>
+						<div class="team-details d-flex align-center py-3 gap-2">
+							<div class="input-group my-3 searchbox">
+								<span class="input-group-text material-symbols-rounded">search</span>
+								<input type="text" class="form-control" placeholder="Search Team / Players">
+							</div>
+							<button type="button" class="btn btn-outline-primary action-btn btn-sm flex-shrink-0"> Add player</button>
+						</div>
 						
 						<div class="team-list">
 							<ul>
 								<li class="d-flex align-center gap-3 px-3 py-2 border flex-column flex-md-row">
 									<img src="./img/players.svg" class="rounded-pill" alt="team" height="35">
 									<h6 class="fw-600 flex-grow-1 mb-0">Mark Willams</h6>
-									<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
+									<small><span class="material-symbols-rounded text-primary">location_on</span> Chennai</small>
 									<small><span class="material-symbols-rounded text-primary">email</span> aswin5599@gmail.com</small>
+									<button class="btn btn-link p-1"><span class="material-symbols-rounded text-danger"> cancel </span></button>
 								</li>
 								<li class="d-flex align-center gap-3 px-3 py-2 mt-3 border flex-column flex-md-row">
-									<img src="./img/players.svg" class="rounded-pill" alt="team" height="35">
-									<h6 class="fw-600 flex-grow-1 mb-0">Mark Willams</h6>
-									<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
+									<img src="./img/player-1.svg" class="rounded-pill" alt="team" height="35">
+									<h6 class="fw-600 flex-grow-1 mb-0">John Willams</h6>
+									<small><span class="material-symbols-rounded text-primary">location_on</span> Chennai</small>
 									<small><span class="material-symbols-rounded text-primary">email</span> aswin5599@gmail.com</small>
+									<button class="btn btn-link p-1"><span class="material-symbols-rounded text-danger"> cancel </span></button>
 								</li>
 							</ul>
+							<div class="text-end save-btn">
+								<button class="btn btn-primary btn-sm">Save</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -104,10 +115,12 @@
 
 
 <section class="history-section text-white my-5">
-	<h2 class="lonsol-100">Our History</h2>
-	<h6 class="fw-600">About the club SC United</h5>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-	<a href="./" class="btn btn-outline-light">Read more</a>
+	<div class="container">
+		<h2 class="lonsol-100">Our History</h2>
+		<h6 class="fw-600 my-3">About the club SC United</h5>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+		<a href="./" class="btn btn-outline-light">Read more</a>
+	</div>
 </section>
 
 

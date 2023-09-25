@@ -55,7 +55,33 @@
 
 	<section class="playerlist-section my-4">
 		<div class="container">
-			<div class="search-group d-flex align-center">
+
+			<div class="backFilter d-flex gap-2 align-center pb-3 mb-3 border-bottom">
+				<button type="button" class="btn btn-link back-btn"><span class="material-symbols-rounded"> arrow_back </span> Player list</button>
+				<div class="dropdown flex-shrink-0 ms-auto">
+					<button type="button" class="btn btn-outline-primary dropdown-toggle action-btn btn-sm" data-bs-auto-close="outside" data-bs-toggle="dropdown"><span class="material-symbols-rounded"> filter_alt </span> Filter</button>
+					<button type="button" class="btn btn-outline-secondary action-btn btn-sm"><span class="material-symbols-rounded"> autorenew </span> Reset</button>
+					<form class="dropdown-menu dropdown-menu-end border-0 shadow" style="min-width: 300px;">
+						<form>
+							<div class="form-group">
+								<label for="name"><span class="material-symbols-rounded"> person </span> Name</label>
+								<input type="text" class="form-control" name="name" />
+							</div>
+							<div class="form-group">
+								<label for="location"><span class="material-symbols-rounded"> location_on </span> Location</label>
+								<input type="text" class="form-control" name="location" />
+							</div>
+							<div class="form-group">
+								<label for="email"><span class="material-symbols-rounded"> email </span> Email</label>
+								<input type="email" class="form-control" name="email" />
+							</div>
+							<button type="submit" class="btn btn-primary action-btn w-100">Apply</button>
+						</form>
+					</ul>
+				</div>
+			</div>
+
+			<!-- <div class="search-group d-flex align-center">
 				<span class="material-symbols-rounded text-primary" form="searchPlayers"> search </span>
 				<input type="text" placeholder="Search here..." class="form-control border-0 dropdown flex-grow-1" id="searchPlayers" name="players">
 				<div class="dropdown flex-shrink-0 btn-group">
@@ -78,7 +104,8 @@
 						</ul>
 					</ul>
 				</div>
-			</div>
+			</div> -->
+
 			<p class="my-3 text-muted">Showing results on : <strong class="text-primary">1220 Leagues</strong></p>
 			<div class="player-cards">
 				<div class="row">
@@ -161,10 +188,12 @@
 
 
 <section class="history-section text-white my-5">
-	<h2 class="lonsol-100">Our History</h2>
-	<h6 class="fw-600">About the club SC United</h5>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-	<a href="./" class="btn btn-outline-light">Read more</a>
+	<div class="container">
+		<h2 class="lonsol-100">Our History</h2>
+		<h6 class="fw-600 my-3">About the club SC United</h5>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+		<a href="./" class="btn btn-outline-light">Read more</a>
+	</div>
 </section>
 
 

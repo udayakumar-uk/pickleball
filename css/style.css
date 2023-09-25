@@ -25,9 +25,17 @@
     color: #fff;
 }
 
+::placeholder{
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
 .title{
     font-weight: 600;
     margin-bottom: 0;
+}
+.subtitle{
+    font-weight: 600;
 }
 .form-control{
     border-color: #D9D9D9;
@@ -68,6 +76,28 @@
 }
 .material-symbols-rounded{
     vertical-align: middle;
+    font-size: 22px;
+}
+
+.line-clamp {
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.line-clamp-1 {
+    -webkit-line-clamp: 1;
+}
+.line-clamp-2 {
+    -webkit-line-clamp: 2;
+}
+.line-clamp-3 {
+    -webkit-line-clamp: 3;
+}
+
+.button, button, button:focus{
+    box-shadow: none !important;
 }
 
 body, html{
@@ -234,13 +264,34 @@ ul{
 
 
 
+.accordion.accordion-primary .accordion-item{
+    border: 0;
+	margin-block: 10px;
+	border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.accordion.accordion-primary .accordion-button{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+    padding-block: 0.8rem;
+}
+
+.accordion.accordion-primary .accordion-button:not(.collapsed){
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.accordion.accordion-primary .accordion-button:not(.collapsed):after {
+    filter: brightness(100);
+}
 
 
-
-
-
-
-
+.form-label {
+    margin-bottom: 0.3rem;
+}
 
 
 @media (max-width: 991px) {
@@ -254,5 +305,17 @@ ul{
     }
     .w-md-50{
         width: 50% !important;
+    }
+    .w-md-75{
+        width: 75% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 1.5rem;
+    }
+    .btn:not(.no-style){
+        padding: 8px 16px;
     }
 }

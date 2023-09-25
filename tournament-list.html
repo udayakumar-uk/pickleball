@@ -55,32 +55,35 @@
 
 	<section class="playerlist-section my-4">
 		<div class="container">
-			<div class="search-group d-flex align-center">
-				<span class="material-symbols-rounded text-primary" form="searchPlayers"> search </span>
-				<input type="text" placeholder="Search here..." class="form-control border-0 dropdown flex-grow-1" id="searchPlayers" name="players">
-				<div class="dropdown flex-shrink-0 btn-group">
-					<button type="button" class="btn btn-primary no-style blr" data-bs-auto-close="outside" data-bs-toggle="dropdown"><span class="material-symbols-rounded"> filter_alt </span> Action</button>
-					<button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split no-style no-afbef brr ps-1"> <span class="material-symbols-rounded"> autorenew </span></button>
-					<form class="dropdown-menu p-0 border-0" style="min-width: 200px;">
-						<ul class="list-group">
-							<li class="list-group-item">
-								<input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-								<label class="form-check-label" for="firstCheckbox">First checkbox</label>
-							</li>
-							<li class="list-group-item">
-								<input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-								<label class="form-check-label" for="secondCheckbox">Second checkbox</label>
-							</li>
-							<li class="list-group-item">
-								<input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-								<label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
-							</li>
-						</ul>
+			
+			<div class="backFilter d-flex gap-2 align-center pb-3 mb-3 border-bottom">
+				<button type="button" class="btn btn-link back-btn"><span class="material-symbols-rounded"> arrow_back </span> Tournament list</button>
+				<div class="dropdown flex-shrink-0 ms-auto">
+					<button type="button" class="btn btn-outline-primary dropdown-toggle action-btn btn-sm" data-bs-auto-close="outside" data-bs-toggle="dropdown"><span class="material-symbols-rounded"> filter_alt </span> Filter</button>
+					<button type="button" class="btn btn-outline-secondary action-btn btn-sm"><span class="material-symbols-rounded"> autorenew </span> Reset</button>
+					<form class="dropdown-menu dropdown-menu-end border-0 shadow" style="min-width: 300px;">
+						<form>
+							<div class="form-group">
+								<label for="name"><span class="material-symbols-rounded"> person </span> Name</label>
+								<input type="text" class="form-control" name="name" />
+							</div>
+							<div class="form-group">
+								<label for="location"><span class="material-symbols-rounded"> location_on </span> Location</label>
+								<input type="text" class="form-control" name="location" />
+							</div>
+							<div class="form-group">
+								<label for="email"><span class="material-symbols-rounded"> email </span> Email</label>
+								<input type="email" class="form-control" name="email" />
+							</div>
+							<button type="submit" class="btn btn-primary action-btn w-100"> Apply</button>
+						</form>
 					</ul>
 				</div>
-                <button class="btn btn-outline-primary ms-2 flex-shrink-0" id="createTournament" type="button">Create Tournament</button>
+				<a href="./create-tournament.html" class="btn btn-primary action-btn btn-sm"><span class="material-symbols-rounded"> add </span> Create Tournament</a>
 			</div>
+
 			<p class="my-3 text-muted">Showing results on : <strong class="text-primary">1220 Leagues</strong></p>
+
 			<div class="player-cards">
 				<div class="row">
 					<div class="col-md-6 mt-4">
@@ -92,7 +95,7 @@
 								<div class="player-details flex-grow-1">
                                     <div class="d-flex">
                                         <div class="flex-grow-1 name">
-                                            <h6 class="fw-600">Annamalai Sivakumar</h6>
+                                            <h6 class="fw-600">Tournament Name Goes Here</h6>
                                             <p>Created by <strong class="text-primary">Abinaya</strong> </p>
                                         </div>
                                         <div class="arrow">
@@ -100,9 +103,7 @@
                                         </div>
                                     </div>
 									<p>Choose the network the players of this tournament must be a member of If you have created a network, or a network you are a member</p>
-									<button class="btn btn-outline-primary btn-sm action-btn">Add Player</button>
-									<button class="btn btn-outline-danger btn-sm ms-2 action-btn">Delete Player</button>
-									<button class="btn btn-outline-warning btn-sm ms-2  action-btn">Schedule Match</button>
+									<button class="btn btn-outline-primary btn-sm action-btn w-100">View Details</button>
 								</div>
 							</div>
 						</div>
@@ -116,7 +117,7 @@
 								<div class="player-details flex-grow-1">
                                     <div class="d-flex">
                                         <div class="flex-grow-1 name">
-                                            <h6 class="fw-600">Annamalai Sivakumar</h6>
+                                            <h6 class="fw-600">Tournament Name Goes Here</h6>
                                             <p>Created by <strong class="text-primary">Abinaya</strong> </p>
                                         </div>
                                         <div class="arrow">
@@ -124,9 +125,8 @@
                                         </div>
                                     </div>
 									<p>Choose the network the players of this tournament must be a member of If you have created a network, or a network you are a member</p>
-									<button class="btn btn-outline-primary btn-sm action-btn">Add Player</button>
-									<button class="btn btn-outline-danger btn-sm ms-2 action-btn">Delete Player</button>
-                                    <button class="btn btn-outline-warning btn-sm ms-2  action-btn">Schedule Match</button>
+									<button class="btn btn-outline-primary btn-sm action-btn w-100">View Details</button>
+									
 								</div>
 							</div>
 						</div>
@@ -140,7 +140,7 @@
 								<div class="player-details flex-grow-1">
                                     <div class="d-flex">
                                         <div class="flex-grow-1 name">
-                                            <h6 class="fw-600">Annamalai Sivakumar</h6>
+                                            <h6 class="fw-600">Tournament Name Goes Here</h6>
                                             <p>Created by <strong class="text-primary">Abinaya</strong> </p>
                                         </div>
                                         <div class="arrow">
@@ -148,9 +148,8 @@
                                         </div>
                                     </div>
 									<p>Choose the network the players of this tournament must be a member of If you have created a network, or a network you are a member</p>
-									<button class="btn btn-outline-primary btn-sm action-btn">Add Player</button>
-									<button class="btn btn-outline-danger btn-sm ms-2 action-btn">Delete Player</button>
-                                    <button class="btn btn-outline-warning btn-sm ms-2  action-btn">Schedule Match</button>
+									<button class="btn btn-outline-primary btn-sm action-btn w-100">View Details</button>
+									
 								</div>
 							</div>
 						</div>
@@ -164,7 +163,7 @@
 								<div class="player-details flex-grow-1">
                                     <div class="d-flex">
                                         <div class="flex-grow-1 name">
-                                            <h6 class="fw-600">Annamalai Sivakumar</h6>
+                                            <h6 class="fw-600">Tournament Name Goes Here</h6>
                                             <p>Created by <strong class="text-primary">Abinaya</strong> </p>
                                         </div>
                                         <div class="arrow">
@@ -172,9 +171,8 @@
                                         </div>
                                     </div>
 									<p>Choose the network the players of this tournament must be a member of If you have created a network, or a network you are a member</p>
-									<button class="btn btn-outline-primary btn-sm action-btn">Add Player</button>
-									<button class="btn btn-outline-danger btn-sm ms-2 action-btn">Delete Player</button>
-                                    <button class="btn btn-outline-warning btn-sm ms-2  action-btn">Schedule Match</button>
+									<button class="btn btn-outline-primary btn-sm action-btn w-100">View Details</button>
+									
 								</div>
 							</div>
 						</div>
@@ -186,10 +184,12 @@
 
 
 <section class="history-section text-white my-5">
-	<h2 class="lonsol-100">Our History</h2>
-	<h6 class="fw-600">About the club SC United</h5>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-	<a href="./" class="btn btn-outline-light">Read more</a>
+	<div class="container">
+		<h2 class="lonsol-100">Our History</h2>
+		<h6 class="fw-600 my-3">About the club SC United</h5>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+		<a href="./" class="btn btn-outline-light">Read more</a>
+	</div>
 </section>
 
 
@@ -253,9 +253,8 @@
 	</div>
 </footer>
 
+
 <script src="./js/jquery-2.2.0.min.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
-
-
 </body>
 </html>

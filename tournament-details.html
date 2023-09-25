@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Tournament Details | Pickleball</title>
+	<link rel="shortcut icon" href="./img/favicon.webp" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.5.2.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0" />
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+
+
+<header>
+	<div class="container-fluid">
+		<div class="header-section d-flex py-2 align-center justify-between">
+			<div class="head-logo mx-auto ms-md-0 me-md-auto order-2 order-md-1">
+				<a href="./" class="d-inline-block">
+					<img src="./img/pickleball-logo.svg" alt="logo" width="100">
+				</a>
+			</div>
+			<nav class="head-nav order-1 order-md-2">
+				<button type="button" class="icon-btn mob-menu d-md-none" id="navMenu">
+					<img src="./img/icons/menu.svg" alt="menu">
+				</button>
+				<div id="navSection" class="nav-section">
+					<button type="button" class="icon-btn mob-close d-md-none close-btn" id="navClose">
+						<img src="./img/icons/close.svg" alt="menu">
+					</button>
+					<ul type="none" class="d-flex flex-column flex-md-row align-center">
+						<li><a href="./" class="menu-link">Home</a></li>
+						<li><a href="#" class="menu-link">Features</a></li>
+						<li><a href="#" class="menu-link">Pricing</a></li>
+						<li><a href="#" class="menu-link">Help</a></li>
+						<li><a href="#" class="menu-link">Blog</a></li>
+						<li><a href="#" class="menu-link">Sponsors</a></li>
+						<li><a href="#" class="menu-link">Shops</a></li>
+					</ul>
+				</div>
+			</nav>
+			<a href="./login.html" class="btn btn-outline-primary login-btn order-3"> Login </a>
+		</div>
+	</div>
+</header>
+
+<main>
+
+<section class="address-section">
+	<div class="container-fluid">
+		<div class="card border-0">
+			<div class="card-body">
+				<div class="row">
+					<div class="col-md-6">
+						<h5 class="subtitle mb-4">The 2020 Summer Kickoff Tournament</h5>
+						<label>Stadium Name</label><br>
+						<strong>The Stadium Name goes here</strong>
+						<div class="d-flex my-3">
+							<div class="startdate col">
+								<label>Start Date</label><br>
+								<strong><span class="material-symbols-rounded text-primary"> calendar_today </span> 20/09/2023</strong>
+							</div>
+							<div class="enddate col">
+								<label>End Date</label><br>
+								<strong><span class="material-symbols-rounded text-primary"> calendar_today </span> 22/09/2023</strong>
+							</div>
+						</div>
+						<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+					<div class="mapping col-md-6">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15544.853865492707!2d80.22836155541991!3d13.085653500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52652678029ed5%3A0xe58f19c280d38067!2sTamilnadu%20Pickleball%20Association!5e0!3m2!1sen!2sin!4v1695536075722!5m2!1sen!2sin" width="100%" height="100%" class="rounded-3" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="match-making-section py-4">
+	<div class="container-fluid">
+		<div class="d-flex justify-between py-4 align-center">
+			<h3 class="title text-center">Match <span class="text-primary">Makings </span></h3>
+			<button type="button"  class="btn btn-outline-primary action-btn">Schedule Match </button>
+		</div>
+
+		<div class="accordion accordion-primary" id="MatchAccordion">
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#match1" aria-expanded="true" aria-controls="collapseOne"> Match 1 </button>
+				</h2>
+				<div id="match1" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+					<div class="accordion-body">
+						<div class="row">
+							<div class="col-md-6">
+								<form class="row g-3" action="">
+									<div class="col-md-6">
+										<label for="matchType" class="form-label">Match Type</label>
+										<select class="form-select" id="matchType">
+											<option selected value="Doubles">Doubles</option>
+											<option value="Single">Singles</option>
+										</select>
+									</div>
+									<div class="col-md-3">
+										<label for="startDate" class="form-label">Start date</label>
+										<input type="date" class="form-control" id="startDate" />
+									</div>
+									<div class="col-md-3">
+										<label for="endDate" class="form-label">End date</label>
+										<input type="date" class="form-control" id="endDate" />
+									</div>
+								</form>
+								<div class="input-group my-3 searchbox">
+									<span class="input-group-text material-symbols-rounded">search</span>
+									<input type="text" class="form-control" placeholder="Search Team / Players">
+								</div>
+								
+								<div class="team-list">
+									<ul>
+										<strong>Player A</strong>
+										<li class="d-flex align-center gap-3 px-3 py-2 border flex-column flex-lg-row">
+											<img src="./img/players.svg" class="rounded-pill" alt="team" height="35">
+											<h6 class="fw-600 flex-grow-1 mb-0">Mark Willams</h6>
+											<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
+											<small><span class="material-symbols-rounded text-primary">email</span> aswin5599@gmail.com</small>
+										</li>
+										<strong>Player B</strong>
+										<li class="d-flex align-center gap-3 px-3 py-2 border flex-column flex-lg-row">
+											<img src="./img/player-1.svg" class="rounded-pill" alt="team" height="35">
+											<h6 class="fw-600 flex-grow-1 mb-0">Mark Willams</h6>
+											<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
+											<small><span class="material-symbols-rounded text-primary">email</span> aswin5599@gmail.com</small>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+							<div class="col-md-6">
+								<h6 class="tour-tab">Points & Rankings</h6>
+								<div class="primary-card">
+									<div class="d-flex justify-between">
+										<p><strong>Player A </strong> <span class="text-primary fw-600">vs</span>  <strong>Player B</strong> </p>
+										<span class="material-symbols-rounded text-primary">trending_up</span>
+									</div>
+									<div class="game-title d-flex justify-between">
+										<label class="col text-primary">Games</label>
+										<ul class="col d-flex justify-end gap-3 gap-md-4 text-center point-number">
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+										</ul>
+									</div>
+									<ul class="team-point">
+										<li class="d-flex align-center">
+											<img src="./img/players.svg" alt="player" class="rounded-pill" width="40">
+											<h6 class="m-0 fw-600 flex-grow-1 mx-2 text-truncate">Mark Willams</h6>
+											<div class="points-input d-flex justify-end gap-3 gap-md-4">
+												<input type="text" class="form-control" value="1" />
+												<input type="text" class="form-control" value="4" />
+												<input type="text" class="form-control" value="3" />
+												<input type="text" class="form-control" />
+												<input type="text" class="form-control" />
+											</div>
+										</li>
+										<li class="d-flex align-center">
+											<img src="./img/player-1.svg" alt="player" class="rounded-pill" width="40">
+											<h6 class="m-0 fw-600 flex-grow-1 mx-2 text-truncate">John Doe</h6>
+											<div class="points-input d-flex justify-end gap-3 gap-md-4">
+												<input type="text" class="form-control" value="1" />
+												<input type="text" class="form-control" value="4" />
+												<input type="text" class="form-control" value="3" />
+												<input type="text" class="form-control" />
+												<input type="text" class="form-control" />
+											</div>
+										</li>
+									</ul>
+									<div class="point-btn d-flex gap-3 pt-3">
+										<button class="btn btn-outline-primary action-btn col">Add Game</button>
+										<button class="btn btn-primary action-btn col">Add Points</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h6 class="tour-tab">Winner Declaration</h6>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="primary-card">
+									<strong class="d-inline-block mb-2">Round Robin Method</strong>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="primary-card p-2 mt-3 mt-sm-0">
+												<div class="player-head d-flex justify-between border-bottom pb-2 mb-2">
+													<div>
+														<strong class="text-primary">Player A</strong><br>
+														<label>Player Name Goes here</label>
+													</div>
+													<img src="./img/player-1.svg" height="35" class="rounded-circle" alt="img">
+												</div>
+												<ul>
+													<li class="d-flex justify-between">
+														<small>Team Points</small>
+														<strong class="text-primary">10</strong>
+													</li>
+													<li class="d-flex justify-between mt-2">
+														<small>Total Games</small>
+														<strong class="text-primary">05</strong>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="primary-card p-2 mt-3 mt-sm-0">
+												<div class="player-head d-flex justify-between border-bottom pb-2 mb-2">
+													<div>
+														<strong class="text-primary">Player B</strong><br>
+														<label>Player Name Goes here</label>
+													</div>
+													<img src="./img/players.svg" height="35" class="rounded-circle" alt="img">
+												</div>
+												<ul>
+													<li class="d-flex justify-between">
+														<small>Team Points</small>
+														<strong class="text-primary">10</strong>
+													</li>
+													<li class="d-flex justify-between mt-2">
+														<small>Total Games</small>
+														<strong class="text-primary">05</strong>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-12 mt-3">
+											<div class="win-ad rounded-3 gap-2 d-flex align-center py-2 px-3 border border-primary">
+												<img src="./img/win.svg" height="50" class="d-none d-lg-block" alt="wincup">
+												<div class="details flex-grow-1">
+													<h5 class="fw-700 text-white">Team A</h5>
+													<p class="mb-0 fw-500 line-clamp line-clamp-2"> is the Winner based on the Round Robin Method</p>
+												</div>
+												<button type="button" class="btn btn-outline-primary action-btn flex-shrink-0">Declare Winner</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="primary-card">
+									<strong class="d-inline-block mb-2">Point Based Method</strong>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="primary-card p-2 mt-3 mt-sm-0">
+												<div class="player-head d-flex justify-between border-bottom pb-2 mb-2">
+													<div>
+														<strong class="text-primary">Player A</strong><br>
+														<label>Player Name Goes here</label>
+													</div>
+													<img src="./img/player-1.svg" height="35" class="rounded-circle" alt="img">
+												</div>
+												<ul>
+													<li class="d-flex justify-between">
+														<small>Team Points</small>
+														<strong class="text-primary">12</strong>
+													</li>
+													<li class="d-flex justify-between mt-2">
+														<small>Total Games</small>
+														<strong class="text-primary">15</strong>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="primary-card p-2 mt-3 mt-sm-0">
+												<div class="player-head d-flex justify-between border-bottom pb-2 mb-2">
+													<div>
+														<strong class="text-primary">Player B</strong><br>
+														<label>Player Name Goes here</label>
+													</div>
+													<img src="./img/players.svg" height="35" class="rounded-circle" alt="img">
+												</div>
+												<ul>
+													<li class="d-flex justify-between">
+														<small>Team Points</small>
+														<strong class="text-primary">11</strong>
+													</li>
+													<li class="d-flex justify-between mt-2">
+														<small>Total Games</small>
+														<strong class="text-primary">52</strong>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-12 mt-3">
+											<div class="win-ad rounded-3 gap-2 d-flex align-center py-2 px-3 border border-primary">
+												<img src="./img/win.svg" height="50" class="d-none d-lg-block" alt="wincup">
+												<div class="details flex-grow-1">
+													<h5 class="fw-700 text-white">Team B</h5>
+													<p class="mb-0 fw-500 line-clamp line-clamp-2"> is the Winner based on the Round Robin Method</p>
+												</div>
+												<button type="button" class="btn btn-outline-primary action-btn flex-shrink-0">Declare Winner</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#match2" aria-expanded="true" aria-controls="collapseOne"> Match 2 </button>
+				</h2>
+				<div id="match2" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+					<div class="accordion-body">
+						<div class="row mb-4">
+							<div class="col-md-6">
+								<form class="row g-3" action="">
+									<div class="col-md-6">
+										<label for="matchType" class="form-label">Match Type</label>
+										<select class="form-select" id="matchType">
+											<option selected value="Doubles">Doubles</option>
+											<option value="Single">Singles</option>
+										</select>
+									</div>
+									<div class="col-md-3">
+										<label for="startDate" class="form-label">Start date</label>
+										<input type="date" class="form-control" id="startDate" />
+									</div>
+									<div class="col-md-3">
+										<label for="endDate" class="form-label">End date</label>
+										<input type="date" class="form-control" id="endDate" />
+									</div>
+								</form>
+								<div class="input-group my-3 searchbox">
+									<span class="input-group-text material-symbols-rounded">search</span>
+									<input type="text" class="form-control" placeholder="Search Team / Players">
+								</div>
+								
+								<div class="row">
+									<div class="col-xl-6">
+										<div class="team-card primary-card p-2">
+											<div class="d-flex justify-between">
+												<div class="details">
+													<h6 class="text-primary mb-0 fw-600">Team A</h6>
+													<small>Team Name Goes here</small>
+												</div>
+												<img src="./img/team-making/team-1-2.svg" height="50" alt="">
+											</div>
+											<div class="team-list d-flex gap-2">
+												<img src="./img/player-1.svg" height="40" class="rounded-circle" alt="">
+												<div class="loc-mail  flex-grow-1">
+													<h6 class="fw-600 mb-0">Mark Willams</h5>
+													<div class="d-flex">
+														<!-- <small class="col"><span class="material-symbols-rounded text-primary"> location_on </span> Chennai</small> -->
+														<small class="col"><span class="material-symbols-rounded text-primary"> email </span> 123@gmail.com</small>
+													</div>
+												</div>
+											</div>
+											<div class="team-list d-flex gap-2">
+												<img src="./img/player-1.svg" height="40" class="rounded-circle" alt="">
+												<div class="loc-mail  flex-grow-1">
+													<h6 class="fw-600 mb-0">Mark Willams</h5>
+													<div class="d-flex">
+														<!-- <small class="col"><span class="material-symbols-rounded text-primary"> location_on </span> Chennai</small> -->
+														<small class="col"><span class="material-symbols-rounded text-primary"> email </span> 123@gmail.com</small>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+									<div class="col-xl-6">
+										<div class="team-card primary-card p-2 mt-3 mt-sm-0">
+											<div class="d-flex justify-between">
+												<div class="details">
+													<h6 class="text-primary mb-0 fw-600">Team A</h6>
+													<small>Team Name Goes here</small>
+												</div>
+												<img src="./img/team-making/team-1-1.svg" height="50" alt="">
+											</div>
+											<div class="team-list d-flex gap-2">
+												<img src="./img/players.svg" height="40" class="rounded-circle" alt="">
+												<div class="loc-mail  flex-grow-1">
+													<h6 class="fw-600 mb-0">Jhon deo</h5>
+													<div class="d-flex">
+														<!-- <small class="col"><span class="material-symbols-rounded text-primary"> location_on </span> Chennai</small> -->
+														<small class="col"><span class="material-symbols-rounded text-primary"> email </span> 123@gmail.com</small>
+													</div>
+												</div>
+											</div>
+											<div class="team-list d-flex gap-2">
+												<img src="./img/player-1.svg" height="40" class="rounded-circle" alt="">
+												<div class="loc-mail  flex-grow-1">
+													<h6 class="fw-600 mb-0">Mark Willams</h5>
+													<div class="d-flex">
+														<!-- <small class="col"><span class="material-symbols-rounded text-primary"> location_on </span> Chennai</small> -->
+														<small class="col"><span class="material-symbols-rounded text-primary"> email </span> 123@gmail.com</small>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-6">
+								<h6 class="tour-tab">Points & Rankings</h6>
+								<div class="primary-card">
+									<div class="d-flex justify-between">
+										<p><strong>Player A </strong> <span class="text-primary fw-600">vs</span>  <strong>Player B</strong> </p>
+										<span class="material-symbols-rounded text-primary">trending_up</span>
+									</div>
+									<div class="game-title d-flex justify-between">
+										<label class="col text-primary">Games</label>
+										<ul class="col d-flex justify-end gap-3 gap-md-4 text-center point-number">
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+										</ul>
+									</div>
+									<ul class="team-point">
+										<li class="d-flex align-center">
+											<img src="./img/team-making/team-1-2.svg" alt="player" class="rounded-pill" width="40">
+											<h6 class="m-0 fw-600 flex-grow-1 mx-2 text-truncate">Mark Willams</h6>
+											<div class="points-input d-flex justify-end gap-3 gap-md-4">
+												<input type="text" class="form-control" value="1" />
+												<input type="text" class="form-control" value="4" />
+												<input type="text" class="form-control" value="3" />
+												<input type="text" class="form-control" />
+												<input type="text" class="form-control" />
+											</div>
+										</li>
+										<li class="d-flex align-center">
+											<img src="./img/team-making/team-1-1.svg" alt="player" class="rounded-pill" width="40">
+											<h6 class="m-0 fw-600 flex-grow-1 mx-2 text-truncate">John Doe</h6>
+											<div class="points-input d-flex justify-end gap-3 gap-md-4">
+												<input type="text" class="form-control" value="1" />
+												<input type="text" class="form-control" value="4" />
+												<input type="text" class="form-control" value="3" />
+												<input type="text" class="form-control" />
+												<input type="text" class="form-control" />
+											</div>
+										</li>
+									</ul>
+									<div class="point-btn d-flex gap-3 pt-3">
+										<button class="btn btn-outline-primary action-btn col">Add Game</button>
+										<button class="btn btn-primary action-btn col">Add Points</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h6 class="tour-tab">Winner Declaration</h6>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="primary-card">
+									<strong class="d-inline-block mb-2">Round Robin Method</strong>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="primary-card p-2 mt-3 mt-sm-0">
+												<div class="player-head d-flex justify-between border-bottom pb-2 mb-2">
+													<div>
+														<strong class="text-primary">Player A</strong><br>
+														<label>Player Name Goes here</label>
+													</div>
+													<img src="./img/player-1.svg" height="35" class="rounded-circle" alt="img">
+												</div>
+												<ul>
+													<li class="d-flex justify-between">
+														<small>Team Points</small>
+														<strong class="text-primary">10</strong>
+													</li>
+													<li class="d-flex justify-between mt-2">
+														<small>Total Games</small>
+														<strong class="text-primary">05</strong>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="primary-card p-2 mt-3 mt-sm-0">
+												<div class="player-head d-flex justify-between border-bottom pb-2 mb-2">
+													<div>
+														<strong class="text-primary">Player B</strong><br>
+														<label>Player Name Goes here</label>
+													</div>
+													<img src="./img/players.svg" height="35" class="rounded-circle" alt="img">
+												</div>
+												<ul>
+													<li class="d-flex justify-between">
+														<small>Team Points</small>
+														<strong class="text-primary">10</strong>
+													</li>
+													<li class="d-flex justify-between mt-2">
+														<small>Total Games</small>
+														<strong class="text-primary">05</strong>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-12 mt-3">
+											<div class="win-ad rounded-3 gap-2 d-flex align-center py-2 px-3 border border-primary">
+												<img src="./img/win.svg" height="50" class="d-none d-lg-block" alt="wincup">
+												<div class="details flex-grow-1">
+													<h5 class="fw-700 text-white">Team A</h5>
+													<p class="mb-0 fw-500 line-clamp line-clamp-2"> is the Winner based on the Round Robin Method</p>
+												</div>
+												<button type="button" class="btn btn-outline-primary action-btn flex-shrink-0">Declare Winner</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="primary-card">
+									<strong class="d-inline-block mb-2">Point Based Method</strong>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="primary-card p-2 mt-3 mt-sm-0">
+												<div class="player-head d-flex justify-between border-bottom pb-2 mb-2">
+													<div>
+														<strong class="text-primary">Player A</strong><br>
+														<label>Player Name Goes here</label>
+													</div>
+													<img src="./img/player-1.svg" height="35" class="rounded-circle" alt="img">
+												</div>
+												<ul>
+													<li class="d-flex justify-between">
+														<small>Team Points</small>
+														<strong class="text-primary">12</strong>
+													</li>
+													<li class="d-flex justify-between mt-2">
+														<small>Total Games</small>
+														<strong class="text-primary">15</strong>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="primary-card p-2 mt-3 mt-sm-0">
+												<div class="player-head d-flex justify-between border-bottom pb-2 mb-2">
+													<div>
+														<strong class="text-primary">Player B</strong><br>
+														<label>Player Name Goes here</label>
+													</div>
+													<img src="./img/players.svg" height="35" class="rounded-circle" alt="img">
+												</div>
+												<ul>
+													<li class="d-flex justify-between">
+														<small>Team Points</small>
+														<strong class="text-primary">11</strong>
+													</li>
+													<li class="d-flex justify-between mt-2">
+														<small>Total Games</small>
+														<strong class="text-primary">52</strong>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-12 mt-3">
+											<div class="win-ad rounded-3 gap-2 d-flex align-center py-2 px-3 border border-primary">
+												<img src="./img/win.svg" height="50" class="d-none d-lg-block" alt="wincup">
+												<div class="details flex-grow-1">
+													<h5 class="fw-700 text-white">Team B</h5>
+													<p class="mb-0 fw-500 line-clamp line-clamp-2"> is the Winner based on the Round Robin Method</p>
+												</div>
+												<button type="button" class="btn btn-outline-primary action-btn flex-shrink-0">Declare Winner</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+
+	</div>
+</section>
+
+
+<section class="history-section text-white my-5">
+	<div class="container">
+		<h2 class="lonsol-100">Our History</h2>
+		<h6 class="fw-600 my-3">About the club SC United</h5>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+		<a href="./" class="btn btn-outline-light">Read more</a>
+	</div>
+</section>
+
+
+</main>
+
+<footer>
+	<div class="footer-content p-4 bg-white rounded-3 m-2">
+		<div class="row">
+			<div class="col-md-4">
+				<h5 class="foot-titile">Additional Features</h5>
+				<h6 class="foot-subtitile">Find a Pickleball Partner</h6>
+				<p>Search for a pickleball partner anywhere in the world. Broadcast comments to your entire city.</p>
+				<h6 class="foot-subtitile">Pickleball Court Reservation Software</h6>
+				<p>Do you need to take pickleball court reservations?</p>
+				<h6 class="foot-subtitile">Bracket Challenges</h6>
+				<p>Start or join a bracket challenge to see who can better predict the results of professional pickleball.</p>
+			</div>
+			<div class="col-md-4">
+				<h5 class="foot-titile">About Us</h5>
+				<p>Global Pickleball Network has been helping clubs and players organize and play more pickleball matches since it began in 2018...<a href="./" class="text-primary"> Read more.</a> </p>
+				<a href="./"><img src="./img/pickleball-logo.svg" width="130" alt="logo" /></a>
+			</div>
+			<div class="col-md-4">
+				<h5 class="foot-titile">CONTACT Details</h5>
+				<ul class="web-address">
+					<li>
+						<span class="material-symbols-rounded"> location_on </span>
+						<div class="foot-details">
+							<p>LOCATION</p>
+							<strong>San Clemente, California</strong>
+						</div>
+					</li>
+					<li>
+						<span class="material-symbols-rounded"> mail </span>
+						<div class="foot-details">
+							<p>NEED HELP</p>
+							<strong>Contact Us</strong>
+						</div>
+					</li>
+					<li>
+						<span class="material-symbols-rounded"> trending_up </span>
+						<div class="foot-details">
+							<p>ADVERTISE</p>
+							<strong>Advertise With Us</strong>
+						</div>
+					</li>
+					<li>
+						<span class="material-symbols-rounded"> contact_support </span>
+						<div class="foot-details">
+							<p>QUESTIONS</p>
+							<strong>FAQs</strong>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="copyright-area text-center p-3 text-white">
+		<h6 class="fw-600">© 2018 - 2023 Global Pickleball Network</h6>
+		<small>Privacy Policy | Terms & Conditions</small>
+	</div>
+</footer>
+
+<script src="./js/jquery-2.2.0.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
