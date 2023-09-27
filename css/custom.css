@@ -630,7 +630,38 @@ footer .foot-subtitile{
 
 .profile-details :is(input, select) {
 	font-weight: 600;
+	transition: all linear 0.2s;
 }
+
+#profilePic{
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.editMode .uploadImg, .editMode #discardBtn, .editMode #saveBtn{
+	display: none;
+}
+
+#editBtn{
+	display: none;
+}
+
+.editMode #editBtn{
+	display: block;
+}
+.editMode .gen-info :is(input, select){
+	padding: 0;
+    border: 0;
+	background: transparent;
+	pointer-events: none;
+}
+
+
+
 
 
 /* Responsive */
