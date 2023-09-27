@@ -103,13 +103,3 @@ $('.select .dropdown li').click(function(){
 })
 
 // wizard end
-
-// edit more
-
-$('#editBtn').click(function(){
-  $('.profile-section').removeClass('editMode');
-})
-
-$('#discardBtn, #saveBtn').click(function(){
-  $('.profile-section').addClass('editMode');
-})
