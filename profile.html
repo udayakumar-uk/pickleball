@@ -316,7 +316,19 @@
 
 <script src="./js/jquery-2.2.0.min.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
-<script src="./js/custom.js"></script>
+<script type="text/javascipt">
+	
+	// edit more
+	
+	$('#editBtn').click(function(){
+	  $('.profile-section').removeClass('editMode');
+	})
+	
+	$('#discardBtn, #saveBtn').click(function(){
+	  $('.profile-section').addClass('editMode');
+	})
+	
+</script>
 
 
 </body>
