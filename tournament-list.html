@@ -22,34 +22,36 @@
 <header>
 	<div class="container-fluid">
 		<div class="header-section d-flex py-2 align-center justify-between">
-			<div class="head-logo mx-auto ms-md-0 me-md-auto order-2 order-md-1">
+			
+			<button type="button" class="icon-btn mob-menu d-lg-none" id="navMenu">
+				<img src="./img/icons/menu.svg" alt="menu">
+			</button>
+			<div class="head-logo mx-auto ms-lg-0 me-lg-auto">
 				<a href="./" class="d-inline-block">
 					<img src="./img/pickleball-logo.svg" alt="logo" width="100">
 				</a>
 			</div>
-			<nav class="head-nav order-1 order-md-2">
-				<button type="button" class="icon-btn mob-menu d-md-none" id="navMenu">
-					<img src="./img/icons/menu.svg" alt="menu">
-				</button>
+			<nav class="head-nav">
 				<div id="navSection" class="nav-section">
-					<button type="button" class="icon-btn mob-close d-md-none close-btn" id="navClose">
+					<button type="button" class="icon-btn mob-close d-lg-none close-btn" id="navClose">
 						<img src="./img/icons/close.svg" alt="menu">
 					</button>
-					<ul type="none" class="d-flex flex-column flex-md-row align-center">
+					<ul type="none" class="d-flex flex-column flex-lg-row align-center">
 						<li><a href="./" class="menu-link">Home</a></li>
-						<li><a href="#" class="menu-link">Features</a></li>
-						<li><a href="#" class="menu-link">Pricing</a></li>
-						<li><a href="#" class="menu-link">Help</a></li>
-						<li><a href="#" class="menu-link">Blog</a></li>
-						<li><a href="#" class="menu-link">Sponsors</a></li>
-						<li><a href="#" class="menu-link">Shops</a></li>
+						<li><a href="./create-tournament.html" class="menu-link">Create Tournament</a></li>
+						<li><a href="./playerlist.html" class="menu-link">Player List</a></li>
+						<li><a href="./team-details.html" class="menu-link">Team Details</a></li>
+						<li><a href="./tournament-details.html" class="menu-link">Tournament Details</a></li>
+						<li><a href="./tournament-list.html" class="menu-link active">Tournament List</a></li>
 					</ul>
 				</div>
 			</nav>
+			<a href="./profile.html" class="menu-link me-3 text-primary profile-icon"><span class="material-symbols-rounded"> account_circle </span></a>
 			<a href="./login.html" class="btn btn-outline-primary login-btn order-3"> Login </a>
 		</div>
 	</div>
 </header>
+
 
 <main>
 

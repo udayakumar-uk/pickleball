@@ -22,30 +22,31 @@
 <header>
 	<div class="container-fluid">
 		<div class="header-section d-flex py-2 align-center justify-between">
-			<div class="head-logo mx-auto ms-md-0 me-md-auto order-2 order-md-1">
+			
+			<button type="button" class="icon-btn mob-menu d-lg-none" id="navMenu">
+				<img src="./img/icons/menu.svg" alt="menu">
+			</button>
+			<div class="head-logo mx-auto ms-lg-0 me-lg-auto">
 				<a href="./" class="d-inline-block">
 					<img src="./img/pickleball-logo.svg" alt="logo" width="100">
 				</a>
 			</div>
-			<nav class="head-nav order-1 order-md-2">
-				<button type="button" class="icon-btn mob-menu d-md-none" id="navMenu">
-					<img src="./img/icons/menu.svg" alt="menu">
-				</button>
+			<nav class="head-nav">
 				<div id="navSection" class="nav-section">
-					<button type="button" class="icon-btn mob-close d-md-none close-btn" id="navClose">
+					<button type="button" class="icon-btn mob-close d-lg-none close-btn" id="navClose">
 						<img src="./img/icons/close.svg" alt="menu">
 					</button>
-					<ul type="none" class="d-flex flex-column flex-md-row align-center">
+					<ul type="none" class="d-flex flex-column flex-lg-row align-center">
 						<li><a href="./" class="menu-link active">Home</a></li>
-						<li><a href="#" class="menu-link">Features</a></li>
-						<li><a href="#" class="menu-link">Pricing</a></li>
-						<li><a href="#" class="menu-link">Help</a></li>
-						<li><a href="#" class="menu-link">Blog</a></li>
-						<li><a href="#" class="menu-link">Sponsors</a></li>
-						<li><a href="#" class="menu-link">Shops</a></li>
+						<li><a href="./create-tournament.html" class="menu-link">Create Tournament</a></li>
+						<li><a href="./playerlist.html" class="menu-link">Player List</a></li>
+						<li><a href="./team-details.html" class="menu-link">Team Details</a></li>
+						<li><a href="./tournament-details.html" class="menu-link">Tournament Details</a></li>
+						<li><a href="./tournament-list.html" class="menu-link">Tournament List</a></li>
 					</ul>
 				</div>
 			</nav>
+			<a href="./profile.html" class="menu-link me-3 text-primary profile-icon"><span class="material-symbols-rounded"> account_circle </span></a>
 			<a href="./login.html" class="btn btn-outline-primary login-btn order-3"> Login </a>
 		</div>
 	</div>
@@ -61,7 +62,7 @@
 					<h1 class="lonsol-900 mb-0">PICKLEBALL</h1>
 					<label class="lonsol-100 fs-3">Network</label>
 					<p class="my-3 w-100 w-md-50">Come join over 85,000 pickleball players and play more pickleball! Organize ladders, leagues and tournaments. Find a court or a partner and get a calculated level from the matches you play.</p>
-					<a href="./" class="btn btn-outline-light action-btn">Register</a>
+					<a href="./register.html" class="btn btn-outline-light action-btn">Register</a>
 				</div>
 
 				<div class="slider-section mt-5">
@@ -228,14 +229,216 @@
 	</div>
 </section>
 
+<section class="wizard-section pb-5">
+	<div class="container">
+		
+		<h3 class="title text-center">Most Active <span class="text-primary"> Network</span></h3>
 
-<section class="events-section pb-5">
-	<div class="container">	
-		<h3 class="title text-center">Upcoming <span class="text-primary"> Events</span></h3>
+		<div class="row mt-5">
+			<div class="col-md-6">
+				<div class="search-box">
+					<div class="input-group custom-style w-100 w-md-50">
+						<span class="material-symbols-rounded input-group-text">search</span>
+						<input type="text" class="form-control" id="searchlist" placeholder="Search">
+					</div>
+					<div class="team-list pt-3">
+						<ul>
+							<li class="d-flex align-center">
+								<div class="team-details me-auto flex-grow-1">
+									<h5 class="fw-600">Premier Pickleball PPL</h5>
+									<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
+								</div>
+								<img src="./img/team-making/team-1-1.svg" alt="team" height="70">
+							</li>
+							<li class="d-flex align-center">
+								<div class="team-details me-auto flex-grow-1">
+									<h5 class="fw-600">FirePick Pickleball </h5>
+									<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
+								</div>
+								<img src="./img/team-making/team-1-2.svg" alt="team" height="70">
+							</li>
+							<li class="d-flex align-center">
+								<div class="team-details me-auto flex-grow-1">
+									<h5 class="fw-600">PPL Premier Pickleball League</h5>
+									<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
+								</div>
+								<img src="./img/team-making/team-2-1.svg" alt="team" height="70">
+							</li>
+							<li class="d-flex align-center">
+								<div class="team-details me-auto flex-grow-1">
+									<h5 class="fw-600">Premier Pickleball PPL</h5>
+									<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
+								</div>
+								<img src="./img/team-making/team-2-2.svg" alt="team" height="70">
+							</li>
+							<li class="d-flex align-center">
+								<div class="team-details me-auto flex-grow-1">
+									<h5 class="fw-600">Major Pickleball League 2023 - 2024</h5>
+									<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
+								</div>
+								<img src="./img/team-making/team-3-1.svg" alt="team" height="70">
+							</li>
+							<li class="d-flex align-center">
+								<div class="team-details me-auto flex-grow-1">
+									<h5 class="fw-600">PPL League Pickleball</h5>
+									<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
+								</div>
+								<img src="./img/team-making/team-3-2.svg" alt="team" height="70">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="network-wizard">
+					<div class="netwrk-dtls">
+						<h5 class="title">Create <span class="text-primary">Network</span></h5>
+						<p class="mb-2">Here you can create your own Network</p>
+					</div>
+
+					
+					<!-- wizard area -->
+
+
+		<div class="wrapper bg-white rounded-4 p-4">
+            <form action="" id="wizard">
+                <h3></h3>
+                <section>
+					<h4 class="network-title">Form 1</h4>
+					<div class="form-group">
+						<label for="wizNetName">Network Name<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNetName" />
+					</div>
+					<div class="form-group">
+						<label for="wizNetLoc">Network Location<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNetLoc" />
+					</div>
+					<div class="form-group">
+						<label for="wizNeburl">Website URL<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNeburl" />
+					</div>
+					<div class="form-group">
+						<label for="wizardDesc">Description</label>
+						<textarea name="desc" id="wizardDesc" class="form-control" rows="5"></textarea>
+					</div>
+				</section>
+                <h3></h3>
+                <section>
+					<h4 class="network-title">Form 2</h4>
+					<div class="form-group">
+						<label for="wizNetName">Network Name<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNetName" />
+					</div>
+					<div class="form-group">
+						<label for="wizNetLoc">Network Location<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNetLoc" />
+					</div>
+					<div class="form-group">
+						<label for="wizNeburl">Website URL<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNeburl" />
+					</div>
+					<div class="form-group">
+						<label for="wizardDesc">Description</label>
+						<textarea name="desc" id="wizardDesc" class="form-control" rows="5"></textarea>
+					</div>
+				</section>
+                <h3></h3>
+                <section>
+					<h4 class="network-title">Form 3</h4>
+					<div class="form-group">
+						<label for="wizNetName">Network Name<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNetName" />
+					</div>
+					<div class="form-group">
+						<label for="wizNetLoc">Network Location<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNetLoc" />
+					</div>
+					<div class="form-group">
+						<label for="wizNeburl">Website URL<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNeburl" />
+					</div>
+					<div class="form-group">
+						<label for="wizardDesc">Description</label>
+						<textarea name="desc" id="wizardDesc" class="form-control" rows="5"></textarea>
+					</div>
+				</section>
+                <h3></h3>
+                <section>
+					<h4 class="network-title">Form 4</h4>
+					<div class="form-group">
+						<label for="wizNetName">Network Name<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNetName" />
+					</div>
+					<div class="form-group">
+						<label for="wizNetLoc">Network Location<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNetLoc" />
+					</div>
+					<div class="form-group">
+						<label for="wizNeburl">Website URL<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNeburl" />
+					</div>
+					<div class="form-group">
+						<label for="wizardDesc">Description</label>
+						<textarea name="desc" id="wizardDesc" class="form-control" rows="5"></textarea>
+					</div>
+				</section>
+                <h3></h3>
+                <section>
+					<h4 class="network-title">Form 5</h4>
+					<div class="form-group">
+						<label for="wizNetName">Network Name<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNetName" />
+					</div>
+					<div class="form-group">
+						<label for="wizNetLoc">Network Location<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNetLoc" />
+					</div>
+					<div class="form-group">
+						<label for="wizNeburl">Website URL<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNeburl" />
+					</div>
+					<div class="form-group">
+						<label for="wizardDesc">Description</label>
+						<textarea name="desc" id="wizardDesc" class="form-control" rows="5"></textarea>
+					</div>
+				</section>
+                <h3></h3>
+                <section>
+					<h4 class="network-title">Form 6</h4>
+					<div class="form-group">
+						<label for="wizNetName">Network Name<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNetName" />
+					</div>
+					<div class="form-group">
+						<label for="wizNetLoc">Network Location<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNetLoc" />
+					</div>
+					<div class="form-group">
+						<label for="wizNeburl">Website URL<span class="text-danger">*</span></label>
+						<input type="text" class="form-control" id="wizNeburl" />
+					</div>
+					<div class="form-group">
+						<label for="wizardDesc">Description</label>
+						<textarea name="desc" id="wizardDesc" class="form-control" rows="5"></textarea>
+					</div>
+				</section>
+            </form>
+		</div>
+
+
+
+
+					<!--  -->
+					
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 
-<section class="faq-section pb-5">
+
+
+<section class="faq-section py-5">
 	<div class="container">	
 		<h3 class="title text-center"><span class="text-primary"> Frequently </span> Asked Questions</h3>
 
@@ -284,110 +487,6 @@
 
 	</div>
 </section>
-
-<section class="court-section pb-5">
-	<div class="container">	
-		<h3 class="title text-center"><span class="text-primary"> Our </span> Courts</h3>
-	</div>
-	
-	<div class="container team-list pt-3">
-		<ul class="row">
-			<div class="col-lg-6">
-				<li class="d-flex align-center">
-					<div class="team-details me-auto flex-grow-1">
-						<h5 class="fw-600">Mid-Court Crisis</h5>
-						<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
-					</div>
-					<img src="./img/icons/ticket.svg" alt="team">
-				</li>
-			</div>
-			<div class="col-lg-6">
-				<li class="d-flex align-center">
-					<div class="team-details me-auto flex-grow-1">
-						<h5 class="fw-600">The Volley Llamas</h5>
-						<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
-					</div>
-					<img src="./img/icons/ticket.svg" alt="team">
-				</li>
-			</div>
-			<div class="col-lg-6">
-				<li class="d-flex align-center">
-					<div class="team-details me-auto flex-grow-1">
-						<h5 class="fw-600">Sets On The Beach</h5>
-						<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
-					</div>
-					<img src="./img/icons/ticket.svg" alt="team">
-				</li>
-			</div>
-			<div class="col-lg-6">
-				<li class="d-flex align-center">
-					<div class="team-details me-auto flex-grow-1">
-						<h5 class="fw-600">Ace Whoppers</h5>
-						<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
-					</div>
-					<img src="./img/icons/ticket.svg" alt="team">
-				</li>
-			</div>
-			<div class="col-lg-6">
-				<li class="d-flex align-center">
-					<div class="team-details me-auto flex-grow-1">
-						<h5 class="fw-600">Amazing Aces</h5>
-						<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
-					</div>
-					<img src="./img/icons/ticket.svg" alt="team">
-				</li>
-			</div>
-			<div class="col-lg-6">
-				<li class="d-flex align-center">
-					<div class="team-details me-auto flex-grow-1">
-						<h5 class="fw-600">Designated Drinkers</h5>
-						<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
-					</div>
-					<img src="./img/icons/ticket.svg" alt="team">
-				</li>
-			</div>
-			<div class="col-lg-6">
-				<li class="d-flex align-center">
-					<div class="team-details me-auto flex-grow-1">
-						<h5 class="fw-600">High Fives</h5>
-						<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
-					</div>
-					<img src="./img/icons/ticket.svg" alt="team">
-				</li>
-			</div>
-			<div class="col-lg-6">
-				<li class="d-flex align-center">
-					<div class="team-details me-auto flex-grow-1">
-						<h5 class="fw-600">Court Jesters</h5>
-						<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
-					</div>
-					<img src="./img/icons/ticket.svg" alt="team">
-				</li>
-			</div>
-			<div class="col-lg-6">
-				<li class="d-flex align-center">
-					<div class="team-details me-auto flex-grow-1">
-						<h5 class="fw-600">Serves You Right</h5>
-						<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
-					</div>
-					<img src="./img/icons/ticket.svg" alt="team">
-				</li>
-			</div>
-			<div class="col-lg-6">
-				<li class="d-flex align-center">
-					<div class="team-details me-auto flex-grow-1">
-						<h5 class="fw-600">Fine Whines</h5>
-						<small><span class="material-symbols-rounded text-primary">location_on</span> Vaughan, Ontario</small>
-					</div>
-					<img src="./img/icons/ticket.svg" alt="team">
-				</li>
-			</div>
-		</ul>
-	</div>
-
-</section>
-
-
 
 </main>
 
@@ -452,7 +551,98 @@
 <script src="./js/jquery-2.2.0.min.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/slick.min.js"></script>
+<script src="./js/jquery.steps.js"></script>
 <script src="./js/custom.js"></script>
+
+<script>
+
+
+// slick slider
+$(document).on('ready', function() {
+    $("#bannerSlider").slick({
+      dots: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+    //   prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><span class="material-symbols-rounded"> keyboard_arrow_left </span></button>',
+      prevArrow: ' ',
+      nextArrow: '<button class="slick-next" aria-label="Next" type="button"><span class="material-symbols-rounded"> keyboard_arrow_right </span></button>',
+      cssEase: 'ease',
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+     ]
+    });
+
+
+    $("#matchMakingSlider").slick({
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><span class="material-symbols-rounded"> arrow_back </span></button>',
+        nextArrow: '<button class="slick-next" aria-label="Next" type="button"><span class="material-symbols-rounded"> arrow_forward </span></button>',
+        cssEase: 'ease',
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+       ]
+      });
+});
+
+
+
+// wizard area
+
+$("#wizard").steps({
+  headerTag: "h3",
+  bodyTag: "section",
+  transitionEffect: "fade",
+  enableAllSteps: true,
+  transitionEffectSpeed: 100,
+  labels: {
+      finish: "Submit",
+      next: "Next",
+      previous: "Prev"
+  }
+});
+$('.wizard > .steps li a').click(function(){
+  $(this).parent().addClass('checked');
+$(this).parent().prevAll().addClass('checked');
+$(this).parent().nextAll().removeClass('checked');
+});
+// Custome Jquery Step Button
+$('.forward').click(function(){
+  $("#wizard").steps('next');
+})
+$('.backward').click(function(){
+    $("#wizard").steps('previous');
+})
+
+
+</script>
 
 
 </body>

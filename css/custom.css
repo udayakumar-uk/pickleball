@@ -4,11 +4,14 @@ header nav a{
 	color: #000;
 	text-decoration: none;
 	padding: 1rem;
-    margin-inline: 5px;
 }
 header nav a:hover, header nav a.active{
 	color: var(--primary);
-	text-decoration: underline;
+	/* text-decoration: underline; */
+}
+
+.profile-icon span{
+	font-size: 30px;
 }
 
 /*end header*/
@@ -408,8 +411,20 @@ footer .foot-subtitile{
 .network-wizard .wrapper {
 	height: calc(100% - 70px);
 }
+.network-title{
+	position: relative;
+    top: -35px;
+    display: inline-block;
+	margin: 0;
+}
 
+.network-wizard .form-group{
+	margin-bottom: 1.5rem;
+}
 
+.network-wizard .form-control{
+	min-height: 40px;
+}
 /* end wizard */
 
 
@@ -665,22 +680,20 @@ footer .foot-subtitile{
 
 
 /* Responsive */
-
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
 	header nav a {
 		padding-inline: 10px;
 	}
-	
+}
+
+@media (max-width: 991px) {
 	.login-section h1, .register-section h1{
 		font-size: 38px;
 	}
 	.home-banner, .home-banner .inner-banner{
 		padding: 1rem;
 	}
-}
 
-
-@media (max-width: 767px) {
 	header nav a {
 		display: block;
 	}
@@ -692,9 +705,10 @@ footer .foot-subtitile{
 		padding: 2rem 1rem;
 		transition: all ease-in-out 0.3s;    
 		background: #fff;
-		z-index: 9;
+		z-index: 99;
 		height: 100dvh;
 		overflow: auto;
+		border-right: 1px solid #F0F1F6;
 	}
 	.nav-section ul{
 		flex-wrap: wrap;
@@ -708,6 +722,11 @@ footer .foot-subtitile{
 		left: 0;
 	}
 		
+}
+
+
+@media (max-width: 767px) {
+	
 	.profile-section {
 		background-size: 90%;
 	}
